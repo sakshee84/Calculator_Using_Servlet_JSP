@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Web Calculator with Joke</title>
+<link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+	<img src="images/giphy.gif" class="img1">
+	<h2>Enjoy Calculation With Jokes</h2>
+	<form action="HomeServlet" method="post" onsubmit="validateInput(event)">
+
+		<input name="num1" id="operand1" type="text" placeholder="Enter first number" />
+		<input name="num2" id="operand2" type="text" placeholder="Enter second number" />
+		
+		<select name="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        
+        <br>
+        <button type="submit">Calculate</button>
+        <button type="reset">Reset</button> <br>
+        <span id="errorMessage" style="color: red; display: none;">Please enter numbers.</span>
+
+		
+	</form>
+	
+	
+	 <script src="script.js"></script>
+</body>
+</html>

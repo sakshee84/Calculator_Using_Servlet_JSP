@@ -1,0 +1,41 @@
+@charset "ISO-8859-1";
+
+body {
+  font-size: 40px;
+  text-align:center;
+  background: linear-gradient(to right,  #db0972,#07121a);
+}
+
+h2,h5,a{
+color: white;
+margin:10px;
+}
+
+input, button, select {
+  font-size:30px;
+  color: white;
+  border-radius: 5%;
+  background-color: black;
+  border: 2px solid white;
+} 
+
+.img1{
+width: 20%;
+height:20%;
+border-radius:50%;
+margin-top: 40px;
+}
+
+.img2{
+width: 15%;
+height:15%;
+border-radius:50%;
+margin-top: 20px;
+filter: drop-shadow(20px 10px 10px black);
+}
+
+img:hover{
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+   transform: scale(1.1); 
+}
